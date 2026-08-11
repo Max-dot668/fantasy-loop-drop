@@ -1,19 +1,9 @@
-# Getting Started
-Install the dependencies and run the project
-```
-npm install
-npm start
-```
+# Loot Drop
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+Built this as part of a Scrimba solo project. Instead of doing the standard restaurant ordering app, I wanted to swap it out for a fantasy RPG blacksmith and alchemist theme. 
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Fullstack Developer Path aims to teach you everything you need to become a Junior Developer, or you could go further with one of our advanced courses 🚀
+It has the exact same core logic (item catalog, interactive cart, state management, and a checkout modal), just with weapons and potions instead of burgers and pizza.
 
-- [Our courses](https://scrimba.com/courses)
-- [The Frontend Career Path](https://scrimba.com/fullstack-path-c0fullstack)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
-
-Happy Coding!
+### Tech Stack
+- HTML / CSS
+- Vanilla JavaScript (ES6)
