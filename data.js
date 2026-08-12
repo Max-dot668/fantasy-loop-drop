@@ -1,23 +1,23 @@
-const menuArray = [
+export const inventoryArray = [
     {
-        name: "Pizza",
-        ingredients: ["pepperoni", "mushrom", "mozarella"],
+        name: "Iron Broadsword",
+        ingredients: ["folded steel", "leather grip", "oak pommel"],
         id: 0,
-        price: 14,
-        emoji: "🍕"
+        price: 150,
+        emoji: "⚔️"
     },
     {
-        name: "Hamburger",
-        ingredients: ["beef", "cheese", "lettuce"],
-        price: 12,
-        emoji: "🍔",
+        name: "Shadow-Weave Cloak",
+        ingredients: ["spider silk", "shadow-thread", "silver clasp"],
+        price: 85,
+        emoji: "🥷",
         id: 1
     },
-        {
-        name: "Beer",
-        ingredients: ["grain, hops, yeast, water"],
-        price: 12,
-        emoji: "🍺",
+    {
+        name: "Elixir of Greater Healing",
+        ingredients: ["starlight nectar", "moonflower petal", "dragon tears"],
+        price: 40,
+        emoji: "🧪",
         id: 2
     }
-]
+];

@@ -1,4 +1,6 @@
 body {
+    background-color: #1a1b26;
+    color: #c0caf5;
     margin: 0;
     font-family: "Cinzel", serif;
 } 
@@ -14,4 +16,40 @@ body {
     border-bottom: 3px solid #b8860b; 
     box-shadow: inset 0 -30px 40px rgba(0, 0, 0, 0.9);
 }
- 
+
+.item-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 64px;
+    padding: 20px 0;
+    border-bottom: 1px solid #333;
+}
+
+.item-description {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.item-emoji {
+    font-size: 120px;
+}
+
+.add-button {
+    background-color: #24283b;
+    color: #7aa2f7;
+    border: 1px solid #7aa2f7;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.add-button:hover {
+    background-color: #7aa2f7;
+    color: #1a1b26;
+    border-color: #7aa2f7;
+}
