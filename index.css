@@ -53,3 +53,44 @@ body {
     color: #1a1b26;
     border-color: #7aa2f7;
 }
+
+.receipt-order-title {
+    text-align: center;
+}
+
+.order-item-container, 
+.order-total-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 24px 12px 24px;
+}
+
+.order-item-description {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.remove-btn {
+    background: none;
+    border: none;
+    color: #bb9af7;
+    font-family: inherit;
+    font-size: 0.85rem;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 8px;
+}
+
+.remove-btn:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.order-divider {
+    width: 100%;
+    height: 2px;
+    background-color: #414868;
+    margin: 16px 0;
+}
