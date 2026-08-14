@@ -48,6 +48,10 @@ document.addEventListener('click', (e) => {
   else if (e.target.closest('.order-button')) {
     formPopUp()
   }
+  else if (e.target.closest('.pay-btn')) {
+    e.preventDefault()
+    paymentConfirmationMessage()
+  }
 })
 
 const handleAddToCart = (itemId) => {
@@ -98,6 +102,23 @@ const renderReceipt = () => {
 const formPopUp = () => {
   const formModalEl = document.getElementById('form-modal')
   formModalEl.classList.remove('hidden')
+}
+
+const paymentConfirmationMessage = () => {
+  const formModalEl = document.getElementById('form-modal')
+  const orderContainerEl = document.getElementById('order-container')
+  const customerNameInput = document.getElementById('customerName').value
+
+  formModalEl.classList.add('hidden')
+
+  itemsInCartArray.length = 0
+
+  orderContainerEl.innerHTML = `
+    <div class="confirmation-message">
+      <h2>Thanks, ${customerNameInput}!</h2>
+      <p>Your order is on its way!</p>
+    </div>
+  `
 }
 
 renderList(inventoryArray)
