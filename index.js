@@ -45,6 +45,9 @@ document.addEventListener('click', (e) => {
     itemsInCartArray.splice(targetIndex, 1)
     renderReceipt()
   }
+  else if (e.target.closest('.order-button')) {
+    formPopUp()
+  }
 })
 
 const handleAddToCart = (itemId) => {
@@ -88,7 +91,13 @@ const renderReceipt = () => {
         <p class="total-label">Total price:</p>
         <p class="total-price">$${totalPrice}</p>
       </div>
+      <button class="order-button">Complete order</button>
     `
+}
+
+const formPopUp = () => {
+  const formModalEl = document.getElementById('form-modal')
+  formModalEl.classList.remove('hidden')
 }
 
 renderList(inventoryArray)
